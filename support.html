@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kcal — Support</title>
+<style>
+  :root {
+    --accent: #FF7A00;
+    --bg: #FFFFFF;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --card: #faf7f3;
+    --border: #ececec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #FF8F2A;
+      --bg: #0d0d0d;
+      --fg: #f2f2f2;
+      --muted: #9a9a9a;
+      --card: #1a1712;
+      --border: #262626;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  h1 .mark { color: var(--accent); }
+  .sub {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin: 40px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 1.02rem;
+    margin: 22px 0 4px;
+  }
+  p { margin: 10px 0; }
+  a { color: var(--accent); }
+  .lead {
+    font-size: 1.08rem;
+  }
+  .contact {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 24px 0;
+  }
+  .contact .email {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+  .faq h3 { color: var(--fg); }
+  .faq p { color: var(--muted); }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="mark">Kcal</span> — Support</h1>
+    <div class="sub">Help, answers, and how to get in touch</div>
+  </header>
+
+  <p class="lead">
+    Kcal is a simple calorie and macro tracker. If something isn't working or
+    you have a question, the fastest way to reach a human is by email — you'll
+    get a reply from the developer directly.
+  </p>
+
+  <div class="contact">
+    <p style="margin-top:0;">Contact</p>
+    <p class="email"><a href="mailto:zsombor.toth@tuta.com">zsombor.toth@tuta.com</a></p>
+    <p style="margin-bottom:0; color:var(--muted); font-size:0.92rem;">
+      Please include your device model and iOS version so issues are easier to track down.
+    </p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq">
+    <h3>Is Kcal free?</h3>
+    <p>
+      Kcal comes with a 7-day free trial. After that, a single one-time
+      purchase unlocks the app forever. There are no subscriptions and no
+      recurring fees.
+    </p>
+
+    <h3>I paid but the app is still locked. What do I do?</h3>
+    <p>
+      Open the app, go to Settings, and tap "Restore purchases". This re-checks
+      your purchase with Apple and unlocks the app. Make sure you're signed in
+      with the same Apple Account you used to buy it. If it still doesn't
+      unlock, email us and we'll help.
+    </p>
+
+    <h3>How do I log a food?</h3>
+    <p>
+      Tap "Log food" or the plus on any meal, then choose how you want to add
+      it: scan a barcode, search by name, snap a photo for an AI estimate,
+      describe your meal in words, or enter the values manually.
+    </p>
+
+    <h3>How does the AI estimate work?</h3>
+    <p>
+      When you use AI photo or AI describe, the photo or text you provide is
+      sent to an AI service purely to estimate the calories and macros for that
+      one entry. You can review and edit the result before saving. AI estimates
+      are limited to 10 per day and are approximate — always adjust if you know
+      the real values.
+    </p>
+
+    <h3>A barcode scan says "Product not found".</h3>
+    <p>
+      Not every product is in the food databases yet, especially regional
+      items. When that happens, you can search for the food by name instead, or
+      add it manually with the values from the label — and save it to your Food
+      Library so it's there next time.
+    </p>
+
+    <h3>Where is my data stored?</h3>
+    <p>
+      Everything you log stays on your device. Kcal has no account and no server
+      of its own, and it only contacts outside services when you actively look
+      up a food. See the
+      <a href="privacy.html">Privacy Policy</a> for details.
+    </p>
+
+    <h3>How do I delete my data?</h3>
+    <p>
+      You can delete individual entries inside the app, or remove everything at
+      once by deleting the app from your device. There is no account to close.
+    </p>
+
+    <h3>Do reminders work in the background?</h3>
+    <p>
+      Kcal schedules gentle meal reminders when you open the app. If you don't
+      open it for a couple of days, reminders may pause until your next visit.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2026 Zsombor Tóth ·
+    <a href="privacy.html">Privacy Policy</a><br>
+    Kcal is not affiliated with Open Food Facts, USDA, FatSecret, or Groq.
+    Nutrition estimates are for general guidance and are not medical advice.
+  </footer>
+</div>
+</body>
+</html>
