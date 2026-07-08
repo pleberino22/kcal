@@ -3,95 +3,255 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Kcal</title>
+<title>Kcal — Privacy Policy</title>
 <style>
+  :root {
+    --accent: #FF7A00;
+    --bg: #FFFFFF;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --card: #faf7f3;
+    --border: #ececec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #FF8F2A;
+      --bg: #0d0d0d;
+      --fg: #f2f2f2;
+      --muted: #9a9a9a;
+      --card: #1a1712;
+      --border: #262626;
+    }
+  }
+  * { box-sizing: border-box; }
   body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 700px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
     margin: 0 auto;
-    padding: 40px 20px 80px;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background-color: #fdfaf8;
+    padding: 48px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 8px;
   }
   h1 {
-    font-size: 28px;
-    margin-bottom: 4px;
+    font-size: 2rem;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
   }
+  h1 .mark { color: var(--accent); }
   .updated {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 40px;
+    color: var(--muted);
+    font-size: 0.9rem;
   }
   h2 {
-    font-size: 19px;
-    margin-top: 36px;
-    margin-bottom: 8px;
-    color: #1a1a1a;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 6px;
+    font-size: 1.25rem;
+    margin: 40px 0 12px;
+    letter-spacing: -0.01em;
   }
-  p {
-    margin: 10px 0;
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 22px; }
+  li { margin: 8px 0; }
+  a { color: var(--accent); }
+  .lead {
+    font-size: 1.08rem;
+    color: var(--fg);
   }
-  a {
-    color: #FF4D4D;
-    text-decoration: none;
+  .callout {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin: 20px 0;
   }
-  a:hover {
-    text-decoration: underline;
+  .callout strong { color: var(--accent); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.96rem;
   }
-  .footer {
-    margin-top: 50px;
-    font-size: 13px;
-    color: #999;
-    border-top: 1px solid #eee;
-    padding-top: 20px;
+  th, td {
+    text-align: left;
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { color: var(--muted); font-weight: 600; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
   }
 </style>
 </head>
 <body>
+<div class="wrap">
+  <header>
+    <h1><span class="mark">Kcal</span> — Privacy Policy</h1>
+    <div class="updated">Last updated: 8 July 2026</div>
+  </header>
 
-<h1>Privacy Policy for Kcal</h1>
-<p class="updated">Last updated: July 1, 2026</p>
+  <p class="lead">
+    Kcal is a calorie and macro tracker built to keep your data on your device.
+    It has no account, no sign-up, and no analytics. This policy explains exactly
+    what stays on your iPhone and the few cases where information leaves it.
+  </p>
 
-<p>Kcal ("the app") is a calorie and macro tracking app developed by Tóth Zsombor. This policy explains what data the app processes and how.</p>
+  <div class="callout">
+    <strong>In short:</strong> everything you log lives only on your device.
+    Kcal contacts outside services only when you actively look up a food —
+    and only sends what that specific lookup needs. There are no accounts,
+    no advertising, and no tracking.
+  </div>
 
-<h2>No account required</h2>
-<p>Kcal does not require you to create an account. There is no login, no user profile, and no data is stored on our servers tied to your identity.</p>
+  <h2>What stays on your device</h2>
+  <p>
+    The following is stored locally on your iPhone and is never transmitted to
+    the developer or anyone else. It is included in your device's normal
+    encrypted backups (iCloud or iTunes/Finder) only if you have those enabled,
+    and it is controlled entirely by you:
+  </p>
+  <ul>
+    <li>Everything you log — foods, meals, portions, dates, and history</li>
+    <li>Foods and recipes you save to your Food Library</li>
+    <li>Your calorie and macro goals, streak, and app settings</li>
+  </ul>
+  <p>
+    Deleting the app removes this data from your device.
+  </p>
 
-<h2>Data stored on your device</h2>
-<p>All food logs, goals, streaks, and saved foods are stored locally on your device using Apple's SwiftData framework. This data is not transmitted to us and is not accessible to us. If you use iCloud backup, this data may be included in your personal iCloud backup, subject to Apple's own privacy practices.</p>
+  <h2>When information leaves your device</h2>
+  <p>
+    Kcal reaches the internet only to look up nutrition information, and only
+    at the moment you ask it to. Each lookup sends the minimum needed to answer
+    your request. Nothing is sent in the background, and none of it is tied to
+    your identity.
+  </p>
 
-<h2>Third-party services used by the app</h2>
+  <table>
+    <thead>
+      <tr><th>When you…</th><th>What is sent</th><th>To</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Scan a barcode</td>
+        <td>The barcode digits</td>
+        <td>Open Food Facts; if no match is found, FatSecret</td>
+      </tr>
+      <tr>
+        <td>Search for a food</td>
+        <td>The text you type</td>
+        <td>USDA FoodData Central and FatSecret</td>
+      </tr>
+      <tr>
+        <td>Use AI photo</td>
+        <td>The meal photo you choose (resized)</td>
+        <td>Groq (AI estimation)</td>
+      </tr>
+      <tr>
+        <td>Use AI describe</td>
+        <td>The description you type</td>
+        <td>Groq (AI estimation)</td>
+      </tr>
+    </tbody>
+  </table>
 
-<p><strong>1. Open Food Facts (openfoodfacts.org)</strong><br>
-When you scan a barcode or search for a food by name, the app sends the barcode or search text to the Open Food Facts API to retrieve nutritional information. This is a public, open database. No personal identifiers are sent with these requests.</p>
+  <p>
+    These requests contain no name, email, account, device identifier, or
+    location — only the food-related content described above. Kcal does not
+    store this content on any server of its own; it has no server. The
+    responses are used to fill in nutrition values, which you then confirm
+    and save locally.
+  </p>
 
-<p><strong>2. Groq (groq.com)</strong><br>
-When you use the "Estimate from photo" feature, the photo you take or select is sent to Groq's AI API for one-time analysis to estimate calorie and macro content. The photo is processed to generate an estimate and is not stored by us. Please refer to Groq's own privacy policy (<a href="https://groq.com/privacy-policy" target="_blank" rel="noopener">groq.com/privacy-policy</a>) for how they handle data sent to their API.</p>
+  <div class="callout">
+    <strong>About AI photos:</strong> when you use AI photo, the image you
+    select is resized and sent to Groq solely to estimate the food's calories
+    and macros for that one request. It is not stored by Kcal, not linked to
+    you, and not used for advertising or tracking. If you never use the AI
+    photo feature, no photo is ever sent.
+  </div>
 
-<h2>No advertising, no analytics, no tracking</h2>
-<p>Kcal does not use any advertising networks, analytics SDKs, or tracking technologies. We do not collect device identifiers, usage statistics, or any data for marketing purposes.</p>
+  <h2>Third-party services</h2>
+  <p>
+    Kcal uses these services only to answer the lookups above. Their handling
+    of the requests they receive is governed by their own policies:
+  </p>
+  <ul>
+    <li><a href="https://world.openfoodfacts.org/terms-of-use" target="_blank" rel="noopener">Open Food Facts</a> — barcode product data</li>
+    <li><a href="https://fdc.nal.usda.gov" target="_blank" rel="noopener">USDA FoodData Central</a> — generic food data</li>
+    <li><a href="https://platform.fatsecret.com/" target="_blank" rel="noopener">FatSecret</a> — branded food and barcode data</li>
+    <li><a href="https://groq.com/privacy-policy/" target="_blank" rel="noopener">Groq</a> — AI calorie and macro estimation</li>
+  </ul>
+  <p>
+    Kcal contains no advertising SDKs, no analytics SDKs, and no third-party
+    tracking of any kind.
+  </p>
 
-<h2>In-app purchase</h2>
-<p>Kcal offers a one-time, non-consumable in-app purchase to unlock full access after a free trial period. This purchase is processed entirely by Apple through StoreKit; we do not receive or store any payment information.</p>
+  <h2>Camera</h2>
+  <p>
+    Kcal asks for camera access for two purposes only: scanning barcodes and
+    taking meal photos for AI estimation. A photo you take or select is either
+    kept on your device or, if you use AI photo, sent to Groq for that single
+    estimate as described above. Kcal does not upload your photo library and
+    does not access photos you don't choose.
+  </p>
 
-<h2>Notifications</h2>
-<p>If you enable meal reminders, these are scheduled locally on your device using Apple's notification framework. No data about your reminder preferences is sent to us or any third party.</p>
+  <h2>Purchases</h2>
+  <p>
+    Kcal offers a free trial followed by a one-time unlock. Purchases are
+    handled entirely by Apple through the App Store. Kcal never sees or
+    stores your payment details. Whether you have unlocked the app is
+    determined by Apple's StoreKit on your device.
+  </p>
 
-<h2>Children's privacy</h2>
-<p>Kcal is not directed at children under 13 and does not knowingly collect data from children.</p>
+  <h2>Children</h2>
+  <p>
+    Kcal is a general-audience nutrition tool and is not directed at children
+    under 13. It does not knowingly collect any personal information from
+    children.
+  </p>
 
-<h2>Changes to this policy</h2>
-<p>We may update this policy from time to time. Changes will be posted on this page with an updated "Last updated" date.</p>
+  <h2>Data you control</h2>
+  <p>
+    Because your data lives on your device, you are in full control of it. You
+    can delete individual entries in the app, or remove everything at once by
+    deleting the app. There is no account to close and no server-side data for
+    the developer to hold.
+  </p>
 
-<h2>Contact</h2>
-<p>If you have questions about this privacy policy, contact us at: <a href="mailto:zsombor.toth@tuta.com">zsombor.toth@tuta.com</a></p>
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, the updated version will be posted here with a new
+    "last updated" date. Material changes will be reflected before or when they
+    take effect.
+  </p>
 
-<div class="footer">
-  &copy; 2026 Tóth Zsombor — Kcal
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy or your privacy in Kcal:
+  </p>
+  <p>
+    Zsombor Tóth<br>
+    <a href="mailto:zsombor.toth@tuta.com">zsombor.toth@tuta.com</a>
+  </p>
+
+  <footer>
+    &copy; 2026 Zsombor Tóth. Kcal is not affiliated with Open Food Facts,
+    USDA, FatSecret, or Groq. Nutrition estimates are for general guidance
+    and are not medical advice.
+  </footer>
 </div>
-
 </body>
 </html>
